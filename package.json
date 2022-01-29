@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "back_end_clear": "cd back_end && yarn clear_build",
+    "generate_front_build_folder": "cd front_end && yarn build",
+    "build": "yarn back_end_clear && yarn generate_front_build_folder",
+    "start": "cd back_end && yarn start",
+    "go": "yarn build && yarn start"
+  }
+}
