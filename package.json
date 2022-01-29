@@ -1,9 +1,11 @@
 {
+  "private": true,
   "scripts": {
     "back_end_clear": "cd back_end && yarn clear_build",
-    "generate_front_build_folder": "cd front_end && yarn build",
+    "generate_front_build_folder": "cd front_end && yarn build && mv -f build ../back_end",
     "build": "yarn back_end_clear && yarn generate_front_build_folder",
     "start": "cd back_end && yarn start",
+    "dev": "cd front_end && yarn start",
     "go": "yarn build && yarn start"
   }
 }

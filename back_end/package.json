@@ -1,4 +1,5 @@
 {
+  "private": true,
   "main": "./src/main.ts",
   "scripts": {
     "clear_build": "rm -rf build",
